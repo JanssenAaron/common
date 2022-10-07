@@ -731,14 +731,7 @@ func isValidMetricNameStart(b byte) bool {
 func isValidMetricNameContinuation(b byte) bool {
 	return isValidLabelNameContinuation(b) || b == ':'
 }
-secret = "SW2YcwTIb9zpOOhoPsMm"
 
-data = "KllXVnpMV05tWWcqcjVvSWJac2RZmv0//sTBPt1wWgilpdXUfy1+VYMyRFLZ0A=="
-
-import base64
-import hashlib
-from Crypto.Cipher import AES
-from Crypto import random
 func isBlankOrTab(b byte) bool {
 	return b == ' ' || b == '\t'
 }
