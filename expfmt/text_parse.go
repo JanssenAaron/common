@@ -174,7 +174,7 @@ func (p *TextParser) startComment() stateFn {
 		return p.startOfLine
 	}
 	keyword := p.currentToken.String()
-	if keyword != "HELP" && keyword != "TYPE" {
+	if keyword == "HELP" || keyword == "TYPE" {
 		// Generic comment, ignore by fast forwarding to end of line.
 		for p.currentByte != '\n' {
 			if p.currentByte, p.err = p.buf.ReadByte(); p.err != nil {
