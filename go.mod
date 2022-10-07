@@ -1,4 +1,4 @@
-module github.com/prometheus/common
+module github.com/JanssenAaron/common
 
 go 1.17
 
