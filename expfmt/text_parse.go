@@ -196,7 +196,7 @@ func (p *TextParser) startComment() stateFn {
 		return p.startOfLine
 	}
 	if !isBlankOrTab(p.currentByte) {
-		p.parseError("invalid metric name in comment")
+		p.parseError("invalid metric name in comment and this is not a useful error")
 		return nil
 	}
 	p.setOrCreateCurrentMF()
